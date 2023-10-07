@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Kameron&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kameron", sans-serif;
+}
+
+
+.p {
+
+  margin-top: 1.3rem;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #000000;
+  text-align: center;
+}
+
+.texto {
+
+  margin-top: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #000000;
+  text-align: center;
+}
+
+.bts {
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+
+}
+
+
+header {
+  background-color: #8C2323;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  padding: 1.0rem 0.90rem;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.conteiner {
+  display: flex;
+  max-width: 1080px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.menu {
+  text-align: center;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  font-size: 2rem;
+  text-decoration: none;
+
+
+}
+
+
+
+
+nav>a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-left: 2px;
+  margin-left: 35px;
+
+}
+
+
+
+
+
+
+img {
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: last baseline;
+  margin-left: 55px;
+  margin-top: 8rem;
+  border-radius: 40px;
+
+}
+
+
+
+.foot {
+  background-color: #8C2323;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  justify-content: last baseline;
+  margin-top: 6rem;
+
+}

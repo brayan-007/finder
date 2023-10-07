@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family finder</title>
+  <link rel="stylesheet" href="sobre_nos.css">
+</head>
+
+<body>
+
+  <body>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <header>
+      <div class="container">
+        <div class="menu">Family finder</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="#">Sobre nós</a>
+          <a href="sobre.html">Nossa campanha</a>
+          <a href="fim.html">Motivacional</a>
+          <a href="depoimento.html">Depoimento</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <div class="bts">
+        <button onclick="FontSize('A+')">A+</button>
+        <button onclick="FontSize('A-')">A-</button>
+      </div>
+      <div class="texto">
+        <h4 id="h4"></h4>
+        <p id="p"></p>Criamos esse site com o propósito de ajudar as crianças órfãs e também as
+        pessoas que desejam adotar.</p>
+      </div>
+    </div>
+    <img src="Family.png">
+
+    <footer>
+      <div class="foot">
+        <span>Desenvolvido por Brayan, Otavio e Matheus</span>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function FontSize(type) {
+      var ids = [".texto"];
+      ids.forEach(id => {
+        var elemento = document.querySelector(id);
+        var size = window.getComputedStyle(elemento
+          , null).getPropertyValue('font-size');
+        size = parseFloat(size);
+        if (type == 'A+') {
+          elemento.style.fontSize = (size + 1) + "px";
+        } else {
+          elemento.style.fontSize = (size - 1) + "px";
+        }
+      })
+    }
+  </script>
+
+</html>

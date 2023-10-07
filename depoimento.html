@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Family finder</title>
+  <link rel="stylesheet" href="depoimento.css">
+</head>
+
+<body>
+
+  <body>
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <header>
+      <div class="container">
+        <div class="menu">Family finder</div>
+        <nav>
+          <a href="index.html">Inicio</a>
+          <a href="sobre_nos.html">Sobre nós</a>
+          <a href="sobre.html">Nossa campanha</a>
+          <a href="fim.html">Motivacional</a>
+          <a href="#">Depoimento</a>
+        </nav>
+
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="bts">
+        <button onclick="FontSize('A+')">A+</button>
+        <button onclick="FontSize('A-')">A-</button>
+      </div>
+      <div class="texto">
+        <h4 id="h4">Depoimento</h4>
+        <p id="p">"Minha jornada com o Family Finder foi incrível!
+          Quando eu e meu marido decidimos que queríamos adotar
+          uma criança, estávamos um pouco perdidos e confusos
+          sobre o processo. Foi aí que encontramos o Family Finder.
+          O site nos guiou de maneira clara e acessível em todos os
+          passos do processo de adoção."</p>
+      </div>
+    </div>
+    <img src="happy family.jpg">
+
+    <footer>
+      <div class="foot">
+        <span>Desenvolvido por Brayan, Otavio e Matheus</span>
+      </div>
+    </footer>
+    <script>
+      function FontSize(type) {
+        var ids = [".texto"];
+        ids.forEach(id => {
+          var elemento = document.querySelector(id);
+          var size = window.getComputedStyle(elemento, null).getPropertyValue('font-size');
+          size = parseFloat(size);
+          if (type == 'A+') {
+            elemento.style.fontSize = (size + 1) + "px";
+          } else {
+            elemento.style.fontSize = (size - 1) + "px";
+          }
+        })
+      }
+    </script>
+  </body>
+
+</html>
